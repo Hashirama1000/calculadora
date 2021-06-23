@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:apkCalculadora"
+             x:Class="apkCalculadora.MainPage">
+
+    <StackLayout
+         HorizontalOptions="Center"
+        VerticalOptions="Center"
+           >
+        <!-- wendry koralis 2019-7914 -->
+        
+            <Label Text="Calculadora!" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="25"
+                TextColor="#56403C"   />
+
+            <Label TextColor="Blue" Text="------------------"  x:Name="lblRes"
+                   HorizontalOptions="Center"
+                   FontFamily="italic"
+                   FontSize="20"/>
+            <Entry Placeholder="Ingresa el primer numero" Keyboard="Numeric" x:Name="txtn1" />
+            <Entry Placeholder="Ingresa el segundo numero" Keyboard="Numeric" x:Name="txtn2"/>
+            <Label Text="Selecione la operacion"  />
+            <Picker x:Name="wkOperacion" />
+
+            <Button Text="Calcular" x:Name="calcular" 
+                    BackgroundColor="#02C0E7"/>
+       
+
+    </StackLayout>
+
+</ContentPage>
